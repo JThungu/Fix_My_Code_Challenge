@@ -15,6 +15,14 @@ def fizzbuzz(n):
     if n < 1:
         return
 
+    # 1. create an empty list called tmp_result.
+    # 2. loop through the numbers from 1 to n.
+    # 3. number is divisible by 3 and 5, we append FizzBuzz to
+    # tmp_result.
+    # 4.  umber is divisible by 3, append Fizz to tmp_result.
+    # 5. number is divisible by 5, append Buzz to tmp_result.
+    # 6. Otherwise, append the number itself to tmp_result.
+    # 7. print the space-separated string of tmp_result.
     tmp_result = []
     for i in range(1, n + 1):
         if (i % 3) == 0 and (i % 5) == 0:
